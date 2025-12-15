@@ -34,3 +34,23 @@ p {
     margin-bottom: 35px;
     padding: 20px;
 }
+
+.note strong {
+    color: #fc6512;
+}
+
+.article-container {
+    background-color: #fdf8ab;
+    background-image: url(../assets/imgs/bg_page.png);
+    background-repeat: repeat-y;
+    background-position: center top;
+    padding: 0;
+    margin: 0 auto;
+    width: 760px;
+}
+
+h1 + p {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding-left: 100px;
+}
