@@ -1,86 +1,36 @@
-/* base styles */
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-html {
-    padding-top: 25px;
-    background-image: url('/assets/imgs/bg_page.png');
-}
-
-body {
-    margin: 0 auto;
-    width: 90%; 
-    background-color: #e1edeb;
-    padding: 10px;
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 h1,
-h2 {
-    font-family: 'Gravitas One', 'Arial Black', serif;
-    font-weight: normal;
-}
-
-h1 {
-    font-size: 1.6em;
-    color: #666;  
-}
-
-h2 {
-    font-size: 1.4em;
-    color: #b1967c;
-    border-bottom: 2px solid #fff;
-    background: url('/assets/imgs/head-icon.png') no-repeat 10px 5px;
-    padding: 0 0 2px 60px;
+h2,
+h3 {
+    color: #bd8100;
+    font-family: Baskerville, 'Palatino Linotype', Times, serif;
+    border-top: 2px solid #86a100;
+    padding-top:7px;
+    padding-left: 100px;
 }
 
 p {
-    font-family: 'Palatino Linotype', Baskerville, serif;
-    color: #616161;
-    line-height: 150%;
-    margin-bottom: 10px;
+    color: #505050;
+    font-size: 1em;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-
-/* custom styles */
-
-.page-title {
-    text-transform: capitalize;
-}
-
-.page-title__tech-name {
-    text-transform: uppercase;
-    font-family: 'Gravitas One', 'Arial Black', serif;
-    font-weight: normal;
-}
-
-.intro {
-    color: #6a94cc;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-/* --- media queries --- */
-@media (min-width: 768px) {
-    body {
-        width: 80%;
-        padding: 20px;
-        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-    }
-
-    h1 {
-        font-size: 3em;
-    }
-
-    p {
-        margin-left: 60px;
-    }
-
-    .intro {
-        margin-bottom: 25px;
-    }
+.note {
+    color: #333;
+    border: 3px dashed #bd8100;
+    background-color: #fbf8a9;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    padding: 20px;
 }
