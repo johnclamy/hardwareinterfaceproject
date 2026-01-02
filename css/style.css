@@ -48,19 +48,29 @@ address {
 
 
 /* ===============
+    Layout Styles
+   =============== 
+*/
+
+
+
+/* ===============
     Header Styles
    =============== 
 */
 
-.page-header__top {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.05rem;
+.page-header {
     background-color: var(--black);
+}
+
+.page-header__top {    
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.05rem;    
     color: var(--white);    
     padding: 2em 1em;
 }
 
-.page-header__top__info {
+address.page-header__top__info {
     display: flex;
     justify-content: center;
     gap: 2em;    
@@ -79,4 +89,30 @@ address {
 
 .page-header__top__social-links a:hover {
     color: var(--third);
+}
+
+.navbar {
+    background-color: var(--white);
+}
+
+
+/* media query for the top header section */
+
+@media (min-width: 55em) {
+    .page-header__top {
+        max-width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;        
+    }
+
+    .page-header__top__info {
+        display: flex;
+        justify-content: flex-start
+    }
+
+    .page-header__top__social-links {
+        margin-top: 0;
+    }
 }
