@@ -1,20 +1,25 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300i,400,400i,600,700|Poppins:200,200i,300,300i,400,500,500i,600,700,800,900&display=swap");
 
+/* =============
+    Base Styles
+   ============= 
+*/
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
+}                
 
 :root {
     /* Palette colours */
-
     --black: #0f0e0e;
     --dark-grey: #333333;
     --grey: #cccccc;
     --light-grey: #ebebeb;
-    --off-white: #f5f5f5;
-    --white: #faf9f6;
+    --lighter-grey: #f5f5f5;
+    --off-white: #faf9f6;
+    --white: #ffffff;
 
     --primary: #3a0ca3;
     --secondary: #4361ee;
@@ -26,10 +31,52 @@
     --warning: #f39c12;
     --danger: #c0392b;
     --info: #16a085;
-    
-
-
 
     font-size: calc(0.55em + 1vw);
+    background-color: var(--off-white);
 }
 
+img {
+    max-width: 100%;
+}
+
+b,
+address {
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+/* ===============
+    Header Styles
+   =============== 
+*/
+
+.page-header__top {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.05rem;
+    background-color: var(--black);
+    color: var(--white);    
+    padding: 2em 1em;
+}
+
+.page-header__top__info {
+    display: flex;
+    justify-content: center;
+    gap: 2em;    
+}
+
+.page-header__top__social-links {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.page-header__top__social-links a {
+    color: var(--off-white);
+    margin: 0 0.5em;
+    font-size: 1.2rem;
+}
+
+.page-header__top__social-links a:hover {
+    color: var(--third);
+}
