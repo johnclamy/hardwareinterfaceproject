@@ -53,11 +53,11 @@ address {
 */
 
 .page-header {
+    font-family: 'Poppins', sans-serif;
     background-color: var(--black);
 }
 
 .page-header__top {    
-    font-family: 'Poppins', sans-serif;
     font-size: 1.05rem;    
     color: var(--off-white);  
     padding: 2em 1em;
@@ -111,10 +111,7 @@ address.page-header__top__info {
 
 .navbar {
     background-color: var(--white);
-    padding: 1em 2em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 1em 2em;  
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -123,7 +120,7 @@ address.page-header__top__info {
 .navlinks {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     list-style: none;
 }
@@ -147,7 +144,8 @@ address.page-header__top__info {
     order: 2;
 }
 
-.navlinks__item:not(.btn) a:hover {
+.navlinks__item:not(.btn) a:hover,
+.navlinks__item.btn a:hover {
     text-decoration: underline;
 }
 
