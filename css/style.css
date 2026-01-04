@@ -147,9 +147,17 @@ address.page-header__top__info {
     order: 2;
 }
 
+.navlinks__item:not(.btn) a:hover {
+    text-decoration: underline;
+}
+
 .navlinks__hamburger {
     order: 1;
     font-size: 1.5rem;
+}
+
+.navlinks__hamburger i {
+    color: var(--black);
 }
 
 .active .navlinks__item {
